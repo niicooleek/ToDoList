@@ -5,6 +5,14 @@ var pendientes = [
     { descripcion: "Cortarse el pelo", completado: false }
 ];
 
+
+function imprimirNuevosPendientes(){
+    var nueva = document.getElementById("item").innerHTML;
+    pendientes.push({ 'descripcion': nueva.value, 'completado': false });
+    imprimirTodosLosPendientes();
+
+}
+
 function imprimirPendiente(pendiente, index) {
     var lista = document.getElementById("lista");
     lista.insertAdjacentHTML('beforeend',
