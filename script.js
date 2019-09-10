@@ -7,8 +7,7 @@ var pendientes = [
 
 
 function imprimirNuevosPendientes(){
-    var nueva = document.getElementById("item").innerHTML;
-    pendientes.push({ 'descripcion': nueva.value, 'completado': false });
+    pendientes.push({ 'descripcion': item.value, 'completado': false });
     imprimirTodosLosPendientes();
 
 }
